@@ -1,0 +1,17 @@
+{
+  "name": "yandex-reserve-bot",
+  "version": "0.2.0",
+  "description": "Playwright automation for reservation.yandex.ru partner forms, with Jev (TypeSafe) as the decision layer and a human-in-the-loop fallback on CAPTCHA.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/run.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "playwright": "1.48.2",
+    "undici": "^6.28.1"
+  }
+}

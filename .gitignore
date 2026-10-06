@@ -1,0 +1,15 @@
+# Real secrets: API keys, Telegram bot token, 2captcha key, VNC password.
+# Only .env.example (placeholders) belongs in the repo.
+.env
+.env.*
+!.env.example
+
+node_modules/
+
+# Browser profile (cookies/session for the Yandex form) and runtime data:
+# decisions.log, selector cache, CAPTCHA screenshots containing guest details.
+.profile/
+data/
+
+.DS_Store
+*.log

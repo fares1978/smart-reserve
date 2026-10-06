@@ -1,0 +1,13 @@
+services:
+  reserve:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:3100:3100"   # put a TLS reverse proxy in front
+      - "127.0.0.1:6080:6080"   # noVNC live view: proxy it behind auth + TLS, never expose directly
+    volumes:
+      - reserve-data:/data
+    shm_size: "1gb"
+volumes:
+  reserve-data:
